@@ -18,7 +18,18 @@ Python version used: 3.6.12
 Usage:
     python mask-detector.py [--source <path/to/video/file>]
     
-    Press ESC key at any time to exit the program
+    Press ESC key at any time to exit the program.
+
+    Set FACE_CONFIDENCE to some value between 0 and 1 to vary
+    face detection accuracy. All faces detected with
+    probability > FACE_CONFIDENCE are considered for further processing.
+    Rest detected faces are rejected.
+
+    Set MASK_CONFIDENCE to some value between 0 and 1 to vary
+    mask detection accuracy. All faces with classified with
+    probability > MASK_CONFIDENCE are considered to have face-mask.
+    Rest are considered to be without mask.
+    are considered
 """
 
 
@@ -32,6 +43,15 @@ from keras.preprocessing import image
 def detect(frame):
     """Gets the camera/video frame and modifies it with
     detected faces and masks
+
+    First, detects faces in the frame and stores only those faces
+    and their corresponding bounding boxes whose confidence is greater
+    than FACE_CONFIDENCE.
+
+    Then, for all the faces, probabilities of having a mask is calculated.
+
+    Then, bounding boxes with a proper label and probability are drawn
+    around every face using prediction values and box coordinates.
 
     The modified frame contains bounding boxes over faces
     and a label "mask" or "no mask" with corresponding
