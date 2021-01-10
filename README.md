@@ -1,7 +1,7 @@
 # Real time Face Mask detector
-###### with OpenCV, Keras (Tensorflow backend) and Python
+##### with OpenCV, Keras (Tensorflow backend) and Python
 
-Detect face-masks in real-time camera streams
+Detect face-masks in real-time camera stream
 
 
 ## Description
@@ -18,7 +18,7 @@ To run the program with custom source file (e.g. an mp4 video file):
 python mask-detector.py --source videoplayback.mp4
 ```
 
-### Dependencies
+#### Dependencies
 
 The project is built using these libraries:
 
@@ -30,9 +30,9 @@ Matplotlib 3.3 (for testing only)
 
 Python 3.6 is used.
 
-### Dataset
+#### Dataset
 
-The dataset for training mask detection model is available here:
+The dataset for training the mask detection model is available here:
 
 https://www.kaggle.com/omkargurav/face-mask-dataset
 
@@ -49,8 +49,8 @@ The dataset directory structure is modified in this format:
 
 ---
 
-Created by Dharmveer Bharti
-Under Computer Vision and Internet of Things Internship
-by The Sparks Foundation
+Created by Dharmveer Bharti  
+Under Computer Vision and Internet of Things Internship  
+by The Sparks Foundation  
 
 ---
