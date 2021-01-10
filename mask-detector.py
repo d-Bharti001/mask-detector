@@ -29,7 +29,6 @@ Usage:
     mask detection accuracy. All faces with classified with
     probability > MASK_CONFIDENCE are considered to have face-mask.
     Rest are considered to be without mask.
-    are considered
 """
 
 
