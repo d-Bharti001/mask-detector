@@ -3,6 +3,7 @@
 
 Detect face-masks in real-time camera stream
 
+![screenshot](screenshot.png)
 
 ## Description
 
