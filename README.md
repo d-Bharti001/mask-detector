@@ -19,6 +19,8 @@ To run the program with custom source file (e.g. an mp4 video file):
 python mask-detector.py --source videoplayback.mp4
 ```
 
+Hit `Esc` key to exit the program at any time.
+
 #### Dependencies
 
 The project is built using these libraries:
