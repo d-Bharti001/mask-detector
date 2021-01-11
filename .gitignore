@@ -1,2 +1,5 @@
 # excluding the image dataset
 data/
+
+# excluding ipynb checkpoints
+.ipynb_checkpoints/
